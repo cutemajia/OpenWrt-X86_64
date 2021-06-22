@@ -16,8 +16,13 @@
 # Add a feed source
 #sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
-sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
-sed -i '$a src-git oaf https://github.com/destan19/OpenAppFilter' feeds.conf.default
-sed -i '$a src-git argon_theme https://github.com/jerrykuku/luci-theme-argon' feeds.conf.default
+#sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+#sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
+#sed -i '$a src-git oaf https://github.com/destan19/OpenAppFilter' feeds.conf.default
+#sed -i '$a src-git argon_theme https://github.com/jerrykuku/luci-theme-argon' feeds.conf.default
+
+sed -i '1i\src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
+sed -i '1i\src-git small https://github.com/kenzok8/small' feeds.conf.default
+sed -i '1i\src-git oaf https://github.com/destan19/OpenAppFilter' feeds.conf.default
+sed -i '1i\src-git argon_theme https://github.com/jerrykuku/luci-theme-argon' feeds.conf.default
 
