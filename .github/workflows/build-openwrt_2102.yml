@@ -67,12 +67,11 @@ jobs:
         chmod +x $DIY_P1_SH
         cd openwrt
         $GITHUB_WORKSPACE/$DIY_P1_SH
+        git clone https://github.com/jerrykuku/luci-theme-argon.git  /workdir/openwrt/feeds/lienol
         
     - name: Update feeds
       run: cd openwrt && ./scripts/feeds update -a
-      cd feeds/lienol
-      git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
-
+     
     - name: Install feeds
       run: cd openwrt && ./scripts/feeds install -a -f
 
