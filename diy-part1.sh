@@ -20,5 +20,5 @@ sed -i '$a src-git kenzok8 https://github.com/kenzok8/openwrt-packages' feeds.co
 sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 sed -i '$a src-git oaf https://github.com/destan19/OpenAppFilter' feeds.conf.default
 #sed -i '$a src-git argon https://github.com/jerrykuku/luci-theme-argon.git;18.06' feeds.conf.default
-cd openwrt/feeds/packages
+cd openwrt/feeds
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git
